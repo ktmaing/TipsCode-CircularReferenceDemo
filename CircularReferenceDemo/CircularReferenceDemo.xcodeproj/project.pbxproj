@@ -11,6 +11,9 @@
 		1723964D24B570FA00FBBF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1723964C24B570FA00FBBF2A /* Assets.xcassets */; };
 		1723965324B570FA00FBBF2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1723965224B570FA00FBBF2A /* main.m */; };
 		1723965E24B5717100FBBF2A /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1723965D24B5717100FBBF2A /* MainVC.m */; };
+		1794378B24B584B30054E220 /* TestCircularUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794378A24B584B30054E220 /* TestCircularUseVC.m */; };
+		1794379124B587DD0054E220 /* DffdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794379024B587DD0054E220 /* DffdProxy.m */; };
+		1794379424B587EA0054E220 /* DffdProxyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794379324B587EA0054E220 /* DffdProxyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,12 @@
 		1723965224B570FA00FBBF2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1723965C24B5717100FBBF2A /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
 		1723965D24B5717100FBBF2A /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		1794378924B584B30054E220 /* TestCircularUseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCircularUseVC.h; sourceTree = "<group>"; };
+		1794378A24B584B30054E220 /* TestCircularUseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCircularUseVC.m; sourceTree = "<group>"; };
+		1794378F24B587DD0054E220 /* DffdProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DffdProxy.h; sourceTree = "<group>"; };
+		1794379024B587DD0054E220 /* DffdProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DffdProxy.m; sourceTree = "<group>"; };
+		1794379224B587EA0054E220 /* DffdProxyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DffdProxyObject.h; sourceTree = "<group>"; };
+		1794379324B587EA0054E220 /* DffdProxyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DffdProxyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,12 @@
 				1723965224B570FA00FBBF2A /* main.m */,
 				1723965C24B5717100FBBF2A /* MainVC.h */,
 				1723965D24B5717100FBBF2A /* MainVC.m */,
+				1794378924B584B30054E220 /* TestCircularUseVC.h */,
+				1794378A24B584B30054E220 /* TestCircularUseVC.m */,
+				1794378F24B587DD0054E220 /* DffdProxy.h */,
+				1794379024B587DD0054E220 /* DffdProxy.m */,
+				1794379224B587EA0054E220 /* DffdProxyObject.h */,
+				1794379324B587EA0054E220 /* DffdProxyObject.m */,
 			);
 			path = CircularReferenceDemo;
 			sourceTree = "<group>";
@@ -134,8 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1723965E24B5717100FBBF2A /* MainVC.m in Sources */,
+				1794378B24B584B30054E220 /* TestCircularUseVC.m in Sources */,
 				1723964224B570F900FBBF2A /* AppDelegate.m in Sources */,
+				1794379424B587EA0054E220 /* DffdProxyObject.m in Sources */,
 				1723965324B570FA00FBBF2A /* main.m in Sources */,
+				1794379124B587DD0054E220 /* DffdProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

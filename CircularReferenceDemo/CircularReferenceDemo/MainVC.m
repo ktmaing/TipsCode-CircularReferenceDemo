@@ -8,6 +8,8 @@
 
 #import "MainVC.h"
 
+#import "TestCircularUseVC.h"
+
 @interface MainVC ()
 
 @end
@@ -19,16 +21,22 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor cyanColor];
+    
+    UIButton *btnTest = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 300, 100)];
+    
+    [btnTest setTitle:@"测试循环引用" forState:UIControlStateNormal];
+    
+    [btnTest addTarget:self action:@selector(btnTestAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btnTest];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)btnTestAction:(UIButton *)button {
+    
+    TestCircularUseVC *ctrl = [[TestCircularUseVC alloc] init];
+    
+    [self.navigationController pushViewController:ctrl animated:YES];
 }
-*/
 
 @end
